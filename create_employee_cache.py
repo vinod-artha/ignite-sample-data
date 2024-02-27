@@ -5,7 +5,7 @@ from pyignite.datatypes import DoubleObject, IntObject, String
 from pyignite.datatypes.prop_codes import *
 
 client = Client()
-client.connect('127.0.0.1', 10800)
+client.connect('localhost', 10800)
 
 employee_cache = client.create_cache({
         PROP_NAME: 'employees',
